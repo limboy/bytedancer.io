@@ -322,7 +322,6 @@ blockquote {
 .archive-item h1 {
   border-bottom: 0;
   margin-bottom: 0;
-  line-height: 1rem;
 }
 
 .archive-item-date {
@@ -465,6 +464,7 @@ table tr td {
 
   .archive-item {
     border-radius: 0;
+    margin: 0 0 15px;
   }
 
   .archive-item .cover {
@@ -473,5 +473,9 @@ table tr td {
 
   .article {
     padding: 0 15px;
+  }
+
+  .content {
+    padding: 0 0 40px;
   }
 }
