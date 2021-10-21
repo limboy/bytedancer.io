@@ -1,0 +1,9 @@
+name = "bytedancer"
+license = "MIT"
+licenselink = "https://github.com/jrutheiser/hugo-lithium-theme/blob/master/LICENSE.md"
+description = "Lithium minimal theme"
+homepage = "https://github.com/jrutheiser/hugo-lithium-theme"
+tags = ["blog"]
+features = ["blog"]
+min_version = 0.15
+

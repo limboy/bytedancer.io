@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ hugo.Generator }}
+
+{{ if .IsHome }}
+<title>{{ .Title }}</title>
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content="website">
+{{ else }}
+<title>{{ .Title }}</title>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@lzyy" />
+<meta name="twitter:site" content="@lzyy" />
+<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+{{ if .Summary }}
+<meta property="og:description" content="{{ .Summary }}" />
+<meta name="twitter:description" content="{{ .Summary }}" />
+{{ end }}
+
+{{ end }}
+{{ with .Site.Params.favicon }}
+  <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+{{ end }}
+
+{{ if .IsHome }}
+<meta property="description" content="{{ .Site.Params.description }}">
+{{ else }}
+  {{ if .Description }}
+  <meta property="description" content="{{ .Description }}">
+  {{ end }}
+{{ end }}
+
+{{ if .Keywords }}
+<meta property="keywords" content ="{{ delimit .Keywords ", " }}">
+{{ end }}
+
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<link rel="icon" href="{{ .Site.BaseURL }}/{{ .Site.Params.icon.url }}" type="image/x-icon"/>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css" media="all">
+
+<script async defer data-domain="bytedancer.io" src="https://analytics.limboy.me/js/plausible.js"></script>
+
+{{ partial "mathjax.html" . }}
