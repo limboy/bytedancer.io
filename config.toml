@@ -1,4 +1,4 @@
 baseURL = "https://bytedancer.io"
 languageCode = "zh-cn"
-title = "字节舞者"
+title = "ByteDancer"
 theme = ["bytedancer"]
