@@ -26,8 +26,7 @@ table {
 h1,
 p,
 figure,
-pre,
-blockquote {
+pre {
   margin: 0 0 20px;
 }
 
@@ -117,6 +116,7 @@ blockquote {
   border-left: 5px solid #e5e5e5;
   color: #686868;
   font-style: italic;
+  margin: 10px 0;
 }
 
 .wrapper {
@@ -204,7 +204,7 @@ blockquote {
 }
 
 .archive-item-content {
-  padding: 10px 0 0;
+  padding: 0;
 }
 
 .article-title {
@@ -296,11 +296,6 @@ blockquote {
 }
 
 .archive h1 a {
-  text-decoration: underline;
-}
-
-.archive h1 a:hover {
-  color: #0366d6;
 }
 
 .archive-title {
@@ -402,7 +397,7 @@ blockquote {
 }
 
 .article ul {
-  padding-left: 2rem;
+  padding-left: 15px;
   margin-bottom: 16px;
 }
 
@@ -418,6 +413,14 @@ blockquote {
 .article p {
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+.archive-item-content ul{
+  margin-left: 15px;
+}
+
+.tags a {
+  color: #222;
 }
 
 table {
@@ -445,7 +448,7 @@ table tr td {
 }
 
 .tags {
-  margin: 10px 0 0;
+  margin: 15px 0 0;
 }
 
 .tags span {
