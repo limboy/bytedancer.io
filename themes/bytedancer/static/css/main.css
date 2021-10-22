@@ -107,7 +107,7 @@ code {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -322,6 +322,7 @@ blockquote {
 .archive-item h1 {
   border-bottom: 0;
   margin-bottom: 0;
+  padding-bottom: 5px;
 }
 
 .archive-item-date {

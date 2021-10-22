@@ -2,6 +2,7 @@
 title: "一个看起来不可能赢的游戏"
 date: 2021-10-22T14:08:51+08:00
 math: true
+cover: /images/impossible-win-cover.jpg
 tags: 
   - Puzzle
   - Math
